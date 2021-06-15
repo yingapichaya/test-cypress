@@ -1,0 +1,17 @@
+export const base_api = "https://trackapi.thailandpost.co.th/post/api/v1"
+export const get_token = `${base_api}/authenticate/token`
+export const valid_login_token =
+  "M2ZWJYA?JVG9B8YRCeVJB3Q4WPDUOkUkDbS@QbEXK3BDCJJWNjD=Q2G4HhUVYrBTDNI8BwL7A3Y~QROAGhSyJ!ZQF0XcC3OQW@Q2"
+export const invalid_login_token =
+  "N2ZWJYA?JVG9B8YRCeVJB3Q4WPDUOkUkDbS@QbEXK3BDCJJWNjD=Q2G4HhUVYrBTDNI8BwL7A3Y~QROAGhSyJ!ZQF0XcC3OQW@Q3"
+export const incomplete_login_token =
+  "M2ZWJYA?JVG9B8YRCeVJB3Q4WPDUOkUkDbS@QbEXK3BDCJJWNjD=Q2G4Hh"
+export const get_items = `${base_api}/track`
+export const valid_authen_token =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtYXBpIiwiYXVkIjoic2VjdXJlLWFwcCIsInN1YiI6IkF1dGhvcml6YXRpb24iLCJleHAiOjE2MjYxNjU2MTUsInJvbCI6WyJST0xFX1VTRVIiXSwiZCpzaWciOnsicCI6InpXNzB4IiwicyI6bnVsbCwidSI6IjY1YjY3Mzk4N2JlMjY4YTBmMzQzY2JiMDVkMWJlZTRlIiwiZiI6InhzeiM5In19.2a5wlwd_rzqNq4KbDTIeJiomD_KAZ3AXfH66AbwmQeMA1XesMjEjyYVR4zBS6QHdI-50nJns-7mvygspazj4uw"
+export const invalid_authen_token =
+  "yeJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtYXBpIiwiYXVkIjoic2VjdXJlLWFwcCIsInN1YiI6IkF1dGhvcml6YXRpb24iLCJleHAiOjE2MjYxNjU2MTUsInJvbCI6WyJST0xFX1VTRVIiXSwiZCpzaWciOnsicCI6InpXNzB4IiwicyI6bnVsbCwidSI6IjY1YjY3Mzk4N2JlMjY4YTBmMzQzY2JiMDVkMWJlZTRlIiwiZiI6InhzeiM5In19.2a5wlwd_rzqNq4KbDTIeJiomD_KAZ3AXfH66AbwmQeMA1XesMjEjyYVR4zBS6QHdI-50nJns-7mvygspazj4uw"
+export const incomplete_authen_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9"
+export const valid_tracking_no = "EY145587896TH"
+export const invalid_tracking_no = "*&999999999TH"
+export const incomplete_tracking_no = "EY1455878TH"
