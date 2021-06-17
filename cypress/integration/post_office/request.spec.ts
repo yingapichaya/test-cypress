@@ -53,7 +53,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       method: "POST",
       url: data.get_token,
       headers: {
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -67,7 +67,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       url: data.get_token,
       headers: {
         authorization: "",
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -81,7 +81,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       url: data.get_token,
       headers: {
         authorization: data.valid_login_token,
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -95,7 +95,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       url: data.get_token,
       headers: {
         authorization: "Token",
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -109,7 +109,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       url: data.get_token,
       headers: {
         authorization: `Token ${data.invalid_login_token}`,
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -123,7 +123,7 @@ context("TrackThailandPost Requests - Get Token", () => {
       url: data.get_token,
       headers: {
         authorization: `Token ${data.incomplete_login_token}`,
-        "content-type": "application/jason"
+        "content-type": "application/json"
       },
       failOnStatusCode: false
     }).should((response) => {
@@ -172,7 +172,6 @@ context("TrackThailandPost Requests - Get Items", () => {
           .to.have.property("status_date")
           .to.be.a("string")
         expect(tracking_object).to.have.property("location").to.be.a("string")
-        // TO DO: to check to.be.null or to.be.a("string")
         expect(tracking_object).to.have.property("delivery_status")
         expect(isNullOrType(tracking_object.delivery_status, "string")).to.be
           .true
@@ -582,7 +581,6 @@ context("TrackThailandPost Requests - Get Items", () => {
       expect(response.status).to.be.eq(200)
       expect(response.body).to.have.property("response")
       expect(response.body.response).to.have.property("items")
-
       expect(response.body.response.items).to.have.property(
         data.invalid_tracking_no
       )
